@@ -1,0 +1,169 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Full-Screen Welcome Message */
+.welcome-message {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  background: rgb(59, 38, 0);
+  background: radial-gradient(
+    circle,
+    rgba(59, 38, 0, 1) 0%,
+    rgba(51, 51, 51, 1) 32%,
+    rgba(0, 43, 85, 1) 59%,
+    rgba(0, 107, 107, 1) 100%
+  );
+}
+.welcome-message p, h1 {
+  margin: 0 20px 0 20px;
+}
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #008080;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  width: 400px;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-bar img {
+  height: 18px;
+}
+
+.buttons button {
+  margin-left: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.buttons img {
+  height: 25px;
+}
+
+.gallery {
+  justify-content: center;
+  background-color: #535353;
+}
+
+.category {
+  margin: 10px;
+  text-align: center;
+}
+
+.category img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.category h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.arrow-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+}
+
+.arrow-button a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
+}
+
+.arrow-button a:hover {
+  background-color: #fff;
+  color: #333;
+  transform: scale(1.2);
+}
+
+.arrow-button img {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  padding: auto;
+}
+
+.navbar-toggler-icon {
+  background-image: url(menu_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    display: none;
+    width: 350px;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
