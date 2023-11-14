@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.welcome-message {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 150%;
+  color: #fff;
+  background: radial-gradient(circle, rgba(59, 38, 0, 1) 0%, rgba(51, 51, 51, 1) 32%, rgba(0, 43, 85, 1) 59%, rgba(0, 107, 107, 1) 100%);
+}
+
+.welcome-message h1, p {
+  margin: 0 20px 0 20px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 8px;
+  background-color: #009999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.menu {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.navbar-elements {
+  display: none;
+  align-items: center;
+  background-color: #006666;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  width: 97vw;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -30px;
+}
+
+.search-bar img {
+  height: 18px;
+}
+
+.buttons button{
+  margin-left: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.buttons img {
+  height: 25px;
+}
