@@ -48,22 +48,26 @@
   align-items: center;
   background-color: #006666;
   justify-content: space-between;
-  height: 56px;
+  flex-wrap: wrap;
+  height: max-content;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
+  margin: 8px auto;
+  flex-wrap: wrap;
 }
 
 .buttons {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .search-bar input {
   padding: 10px;
-  margin-left: 10px;
   border-radius: 100px;
   border: none;
   outline: none;
@@ -81,7 +85,7 @@
   height: 18px;
 }
 
-.buttons button{
+.buttons button {
   margin-left: 20px;
   background: transparent;
   border: none;
