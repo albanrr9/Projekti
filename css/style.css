@@ -7,24 +7,32 @@
   font-family: "Lato", sans-serif;
 }
 
-.welcome-message {
+.arr-welcome-message {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 150%;
   color: #fff;
   background: radial-gradient(circle, rgba(59, 38, 0, 1) 0%, rgba(51, 51, 51, 1) 32%, rgba(0, 43, 85, 1) 59%, rgba(0, 107, 107, 1) 100%);
 }
 
-#welcome-message {
+#welcome-message-h1 {
   margin: 0 20px 0 20px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
-.navbar {
+#welcome-message-p {
+  margin: 0 20px 0 20px;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.arr-navbar {
   position: sticky;
+  z-index: 1;
   top: 0;
   padding: 8px;
   background-color: #009999;
@@ -33,17 +41,17 @@
   align-items: center;
 }
 
-.navbar img {
+.arr-navbar img {
   height: 40px;
 }
 
-.menu {
+.arr-menu {
   border: none;
   outline: none;
   background: transparent;
 }
 
-.navbar-elements {
+.arr-navbar-elements {
   display: none;
   align-items: center;
   background-color: #006666;
@@ -52,14 +60,14 @@
   height: max-content;
 }
 
-.search-bar {
+.arr-search-bar {
   display: flex;
   align-items: center;
   margin: 8px auto;
   flex-wrap: wrap;
 }
 
-.search-bar input {
+.arr-search-bar input {
   padding: 10px;
   border-radius: 100px;
   border: none;
@@ -67,18 +75,18 @@
   width: 97vw;
 }
 
-.search-bar button {
+.arr-search-bar button {
   background: transparent;
   border: none;
   outline: none;
   margin-left: -30px;
 }
 
-.search-bar img {
+.arr-search-bar img {
   height: 18px;
 }
 
-.buttons {
+.arr-buttons {
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -86,17 +94,79 @@
   margin: 8px auto;
 }
 
-.buttons a {
+.arr-buttons a {
   text-decoration: none;
   color: #fff;
 }
-.subbuttons {
+.arr-subbuttons {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  align-items: center;
 }
 
-.subbuttons img {
+.arr-subbuttons img {
   height: 30px;
+}
+
+.gallery {
+  padding: 5vw;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 4px 6px black;
+}
+
+#gallery-item0 {
+  background-image: url(../img/gallery/gaming-pc.png);
+  background-size: contain;
+}
+
+#gallery-item1 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item2 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item3 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item4 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item5 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item6 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item7 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item8 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item9 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item10 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
+}
+#gallery-item11 {
+  background-image: url(../img/gallery/);
+  background-size: contain;
 }
