@@ -110,6 +110,7 @@
 
 .gallery {
   padding: 5vw;
+  background-color: rgb(223, 223, 223);
 }
 
 .card-body {
@@ -118,55 +119,72 @@
   align-items: center;
   text-align: center;
   color: #fff;
+  background-color: rgba(100, 100, 100, 0.5);
   text-shadow: 4px 4px 6px black;
+}
+
+.card-title {
+  font-size: 150%;
 }
 
 #gallery-item0 {
   background-image: url(../img/gallery/gaming-pc.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #gallery-item1 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-laptop.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item2 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/consoles.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item3 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-monitor.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item4 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/tv.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item5 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-table.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item6 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-chair.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item7 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-keyboard.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item8 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-mouse.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item9 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gaming-headset.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item10 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/videogames.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #gallery-item11 {
-  background-image: url(../img/gallery/);
+  background-image: url(../img/gallery/gift-cards.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
