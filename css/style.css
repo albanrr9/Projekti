@@ -113,25 +113,18 @@
   background-color: rgb(223, 223, 223);
 }
 
-.card-body {
+.card-title {
+  font-size: 175%;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px black;
+}
+.card-img-overlay {
+  background-color: rgba(50, 50, 50, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(100, 100, 100, 0.5);
-  text-shadow: 4px 4px 6px black;
 }
 
-.card-title {
-  font-size: 150%;
-}
-
-#gallery-item0 {
-  background-image: url(../img/gallery/gaming-pc.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 #gallery-item1 {
   background-image: url(../img/gallery/gaming-laptop.png);
