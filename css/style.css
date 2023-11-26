@@ -113,6 +113,11 @@
   background-color: rgb(223, 223, 223);
 }
 
+.card {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .card-title {
   font-size: 175%;
   font-weight: 600;
