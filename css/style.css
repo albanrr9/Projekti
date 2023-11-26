@@ -30,12 +30,15 @@
   line-height: normal;
 }
 
-.arr-navbar {
+#navbar {
   position: sticky;
-  z-index: 1;
   top: 0;
+  z-index: 1;
+}
+
+.arr-navbar {
   padding: 8px;
-  background-color: #009999;
+  background-color: #008080;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,11 +113,12 @@
 
 .gallery {
   padding: 5vw;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(0, 115, 115);
 }
 
 .card-img {
   object-fit: contain;
+  padding: 3vw;
 }
 
 .card-title {
@@ -123,65 +127,9 @@
   text-shadow: 4px 4px 4px black;
 }
 .card-img-overlay {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(50, 50, 50, 0.333);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-#gallery-item1 {
-  background-image: url(../img/gallery/gaming-laptop.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item2 {
-  background-image: url(../img/gallery/consoles.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item3 {
-  background-image: url(../img/gallery/gaming-monitor.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item4 {
-  background-image: url(../img/gallery/tv.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item5 {
-  background-image: url(../img/gallery/gaming-table.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item6 {
-  background-image: url(../img/gallery/gaming-chair.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item7 {
-  background-image: url(../img/gallery/gaming-keyboard.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item8 {
-  background-image: url(../img/gallery/gaming-mouse.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item9 {
-  background-image: url(../img/gallery/gaming-headset.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item10 {
-  background-image: url(../img/gallery/videogames.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-#gallery-item11 {
-  background-image: url(../img/gallery/gift-cards.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  text-align: center;
 }

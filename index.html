@@ -29,50 +29,53 @@
         <h1 id="welcome-message-h1">Welcome in TechNova</h1>
         <p id="welcome-message-p">Discover the best deals on your favorite products</p>
       </div>
-      <nav class="arr-navbar">
-        <a href="#"><img src="img/logo/logotext.png" alt="TechNova" /></a>
-        <button class="arr-menu" onclick="menu()">
-          <img src="img/navbar/menu_FILL0_wght400_GRAD0_opsz24.svg" />
-        </button>
-      </nav>
-      <div class="arr-navbar-elements" id="navbar-elements" style="display: none">
-        <form class="arr-search-bar">
-          <input type="text" placeholder="Search..." />
-          <button type="submit"><img src="img/navbar/magnifying-glass.png" /></button>
-        </form>
-        <div class="arr-buttons">
-          <a href="#">
-            <div class="arr-subbuttons">
-              <div>
-                <img src="img/navbar/wishlist.png">
-              </div>
-              <div>
-                <p>Wishlist</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="arr-subbuttons">
-              <div>
-                <img src="img/navbar/shopping-cart.png">
-              </div>
-              <div>
-                <p>Cart</p>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="arr-subbuttons">
-              <div>
-                <img src="img/navbar/user.png">
-              </div>
-              <div>
-                <p>Sign In</p>
-              </div>
-            </div>
-          </a>
+      <nav id="navbar">
+        <div class="arr-navbar">
+          <a href="#"><img src="img/logo/logotext.png" alt="TechNova" /></a>
+          <button class="arr-menu" onclick="menu()">
+            <img src="img/navbar/menu_FILL0_wght400_GRAD0_opsz24.svg" />
+          </button>
         </div>
-      </div>
+        <div class="arr-navbar-elements" id="navbar-elements" style="display: none">
+          <form class="arr-search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="submit"><img src="img/navbar/magnifying-glass.png" /></button>
+          </form>
+          <div class="arr-buttons">
+            <a href="#">
+              <div class="arr-subbuttons">
+                <div>
+                  <img src="img/navbar/wishlist.png">
+                </div>
+                <div>
+                  <p>Wishlist</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="arr-subbuttons">
+                <div>
+                  <img src="img/navbar/shopping-cart.png">
+                </div>
+                <div>
+                  <p>Cart</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="arr-subbuttons">
+                <div>
+                  <img src="img/navbar/user.png">
+                </div>
+                <div>
+                  <p>Sign In</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+      
       <main class="gallery">
         <div class="row row-cols-2 row-cols-md-4 g-2">
           <div class="col">
@@ -178,7 +181,7 @@
           <div class="col">
             <a href="#">
               <div class="card text-bg-dark ratio ratio-1x1">
-                <img src="img/gallery/videogames.jpg" class="card-img" alt="...">
+                <img src="img/gallery/videogames.png" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Videogames</h5>
                 </div>
