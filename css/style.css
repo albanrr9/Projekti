@@ -151,16 +151,25 @@ footer p {
   margin-bottom: 10px;
 }
 
+.social-media {
+  padding: 0;
+}
+
 .social-media li {
-  display: inline-block;
   margin-right: 10px;
+  list-style-type: none;
 }
 
 .social-media a {
   color: #777;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .social-media a:hover {
   color: #333;
+}
+
+.copyright {
+  text-align: center;
 }
