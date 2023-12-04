@@ -140,7 +140,7 @@ footer {
 }
 
 footer h3 {
-  color: #333;
+  color: #fff;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -151,13 +151,30 @@ footer p {
   margin-bottom: 10px;
 }
 
-.social-media {
-  padding: 0;
+footer .row {
+  row-gap: 30px;
 }
 
-.social-media li {
-  margin-right: 10px;
-  list-style-type: none;
+.contact-us a {
+  text-decoration: none;
+  color: #777;
+}
+
+.contact-us a:hover {
+  color: #fff;
+}
+
+.about-us p, .contact-us p {
+  padding-left: 10px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.social-media {
+  padding-left: 10px;
 }
 
 .social-media a {
@@ -167,9 +184,14 @@ footer p {
 }
 
 .social-media a:hover {
-  color: #333;
+  color: #fff;
 }
 
 .copyright {
+  margin-top: 30px;
   text-align: center;
+}
+
+.container {
+  max-width: 90vw;
 }
