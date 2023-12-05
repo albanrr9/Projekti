@@ -155,43 +155,40 @@ footer .row {
   row-gap: 30px;
 }
 
-.contact-us a {
+.arr-contact-us a {
   text-decoration: none;
   color: #777;
 }
 
-.contact-us a:hover {
+.arr-contact-us a:hover {
   color: #fff;
 }
 
-.about-us p, .contact-us p {
+.arr-about-us p, .arr-contact-us p {
   padding-left: 10px;
 }
 
-.social-media-icons {
+.arr-social-media-icons {
   display: flex;
   gap: 5px;
 }
 
-.social-media {
+.arr-social-media {
   padding-left: 10px;
 }
 
-.social-media a {
+.arr-social-media a {
   color: #777;
   font-size: 20px;
   text-decoration: none;
 }
 
-.social-media a:hover {
+.arr-social-media a:hover {
   color: #fff;
 }
 
-.copyright {
+.arr-copyright {
   margin-top: 30px;
   text-align: center;
 }
 
-.container {
-  max-width: 90vw;
-}
