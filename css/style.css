@@ -130,12 +130,22 @@
   font-weight: 600;
   text-shadow: 4px 4px 4px black;
 }
+
 .card-img-overlay {
   background-color: rgba(50, 50, 50, 0.333);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.card-body {
+  display: grid;
+  align-items: center;
+}
+
+.btn-primary {
+  align-self: flex-end;
 }
 
 footer {
