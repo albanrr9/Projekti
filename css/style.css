@@ -209,14 +209,16 @@ footer .row {
 }
 
 .arr-product-photos {
-  height: auto;
-  width: 200px;
+  height: 180px;
+  width: 180px;
+  margin: auto;
+  margin-top: auto;
   display: flex;
   justify-content: center;
 }
 
 @media only screen and (min-width: 500px) {
-  .card2 {
+  .card {
     flex-direction: row;
   }
 }
