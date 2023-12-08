@@ -202,31 +202,25 @@ footer .row {
   text-align: center;
 }
 
-.arr-product-details {
-  display: flex;
-  flex-direction: column;
-  padding: 2vw;
-}
-
-.arr-product-photos {
-  height: 180px;
-  width: 180px;
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.arr-carousel {
-  width: 150px;
-  height: auto;
-}
-
 .card {
-  justify-content: center;
+  flex-direction: column;
+  min-height: 200px;
 }
 
-@media only screen and (min-width: 500px) {
+.carousel-item img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 425px) {
   .card {
     flex-direction: row;
+  }
+  .card img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .carousel-item img {
+    width: auto;
   }
 }
