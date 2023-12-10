@@ -201,7 +201,6 @@ footer .row {
 .card {
   width: 100%;
   flex-direction: column;
-  position: relative;
   display: flex;
 }
 
