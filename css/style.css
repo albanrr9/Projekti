@@ -226,4 +226,14 @@ a.btn.btn-primary {
   .carousel-inner {
     width: 250px;
   }
+  .arr-menu {
+    display: none;
+  }
+  #navbar {
+    display: flex;
+  }
+  .arr-navbar-elements {
+    flex-direction: column;
+    display: flex !important;
+  }
 }
