@@ -19,7 +19,13 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  background: radial-gradient(circle, rgba(59, 38, 0, 1) 0%, rgba(51, 51, 51, 1) 32%, rgba(0, 43, 85, 1) 59%, rgba(0, 107, 107, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(59, 38, 0, 1) 0%,
+    rgba(51, 51, 51, 1) 32%,
+    rgba(0, 43, 85, 1) 59%,
+    rgba(0, 107, 107, 1) 100%
+  );
 }
 
 #welcome-message-h1 {
@@ -104,6 +110,7 @@
   text-decoration: none;
   color: #fff;
 }
+
 .arr-subbuttons {
   display: flex;
   flex-direction: row;
@@ -169,7 +176,8 @@ footer .row {
   color: #fff;
 }
 
-.arr-about-us p, .arr-contact-us p {
+.arr-about-us p,
+.arr-contact-us p {
   padding-left: 10px;
 }
 
@@ -222,17 +230,116 @@ a.btn.btn-primary {
   .card {
     flex-direction: row;
   }
+
   .carousel-inner {
     width: 250px;
   }
+
   .arr-menu {
     display: none;
   }
+
   #navbar {
     display: flex;
   }
+
   .arr-navbar-elements {
     flex-direction: column;
     display: flex !important;
   }
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar {
+  background-color: #008080;
+}
+
+.navbar-collapse {
+  flex-basis: unset;
+  flex-grow: unset;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-collapse form {
+  width: 100%;
+  padding: 0 15%;
+}
+
+.nav-link img {
+  height: 30px;
+  aspect-ratio: 1/1;
+}
+
+.nav-link-name {
+  display: none;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    width: calc(100vw - 24px);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+  }
+
+  .navbar-collapse form {
+    padding: 0%;
+  }
+
+  .nav-link-name {
+    display: inline;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  #navlink1 {
+    margin-left: 0 !important;
+  }
+}
+
+.btn img {
+  height: 18px;
+  aspect-ratio: 1/1;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  aspect-ratio: 1/1;
+  height: 40px;
+  margin-left: -45px;
+  padding: 11px;
+  display: flex;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 40px;
+}
+
+.container-fluid {
+  row-gap: 3vw;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#navlink1 {
+  margin-left: 55px;
 }

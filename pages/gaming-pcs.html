@@ -25,58 +25,59 @@
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
-      <nav id="navbar">
-        <div class="arr-navbar">
-          <a href="../index.html#navbar"><img src="../img/logo/logotext.png" alt="TechNova" /></a>
-          <button class="arr-menu" onclick="menu()">
-            <img src="../img/navbar/menu_FILL0_wght400_GRAD0_opsz24.svg" />
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html#navbar"
+            ><img src="../img/logo/logotext.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div
-          class="arr-navbar-elements"
-          id="navbar-elements"
-          style="display: none"
-        >
-          <form class="arr-search-bar">
-            <input type="text" placeholder="Search..." />
-            <button type="submit">
-              <img src="../img/navbar/magnifying-glass.png" />
-            </button>
-          </form>
-          <div class="arr-buttons">
-            <a href="#">
-              <div class="arr-subbuttons">
-                <div>
-                  <img src="../img/navbar/wishlist.png" />
-                </div>
-                <div>
-                  <p>Wishlist</p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="arr-subbuttons">
-                <div>
-                  <img src="../img/navbar/shopping-cart.png" />
-                </div>
-                <div>
-                  <p>Cart</p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="arr-subbuttons">
-                <div>
-                  <img src="../img/navbar/user.png" />
-                </div>
-                <div>
-                  <p>Sign In</p>
-                </div>
-              </div>
-            </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 search-input"
+                type="text"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-danger" type="submit">
+                <img src="../img/navbar/magnifying-glass.png" alt="" />
+              </button>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item" id="navlink1">
+                <a class="nav-link" href="#"
+                  ><img src="../img/navbar/wishlist.png" />
+                  <p class="nav-link-name">Wishlist</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../img/navbar/shopping-cart.png" />
+                  <p class="nav-link-name">Cart</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../img/navbar/user.png" />
+                  <p class="nav-link-name">Sign In</p></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
+
+      <!--Main-->
       <main class="arr-gallery">
         <div class="row row-cols-1 row-cols-lg-2 g-2">
           <div class="col">
