@@ -2,6 +2,7 @@
 
 :root {
   scroll-behavior: smooth;
+  --button-color: #ffa500;
 }
 
 * {
@@ -148,6 +149,8 @@ footer .row {
 a.btn.btn-primary {
   justify-self: end;
   align-self: flex-end;
+  background-color: var(--button-color);
+  border-color: var(--button-color);
 }
 
 /*Style properties for Desktop*/
@@ -229,11 +232,11 @@ a.btn.btn-primary {
   }
 }
 
-.btn img {
+.btn-danger img {
   height: 18px;
   aspect-ratio: 1/1;
 }
-.btn {
+.btn-danger {
   background: transparent;
   border: none;
   outline: none;
