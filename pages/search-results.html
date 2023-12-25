@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Results - TechNova</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo/loggo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fc770c52cb.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+  </head>
+<body>
+
+<!-- Navbar (You may customize this based on your website design) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Your E-Commerce Site</a>
+  <!-- Add a search form in the navbar -->
+  <form class="form-inline my-2 my-lg-0 ml-auto">
+    <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search" onkeydown="search(event)">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="search(event)">Search</button>
+  </form>
+</nav>
+
+<!-- Filter and Sort Options -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <label for="sortSelect">Sort By:</label>
+      <select class="form-control" id="sortSelect" onchange="sortResults()">
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+        <!-- Add more sorting options as needed -->
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="filterSelect">Filter By:</label>
+      <select class="form-control" id="filterSelect" onchange="filterResults()">
+        <option value="all">All Products</option>
+        <option value="Category 1">Category 1</option>
+        <option value="Category 2">Category 2</option>
+        <!-- Add more filtering options as needed -->
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- Search Results Section -->
+<div class="container mt-4">
+  <h2>Search Results</h2>
+  <div id="results-container" class="row">
+    <!-- Results will be dynamically added here using JavaScript -->
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
