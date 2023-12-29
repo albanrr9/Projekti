@@ -16,7 +16,7 @@ function handleKeyPress(event) {
 function search1() {
   const searchTerm = document.getElementById('searchInput').value.toLowerCase();
   const queryParams = `?search=${encodeURIComponent(searchTerm)}`;
-  window.location.href = `/pages/search-results.html${queryParams}`;
+  window.location.href = `${queryParams}`;
 }
 
 function handleKeyPress1(event) {
