@@ -1,5 +1,5 @@
 function search() {
-  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const searchTerm = document.getElementById('searchInput').value;
   const queryParams = `?search=${encodeURIComponent(searchTerm)}`;
   window.location.href = `pages/search-results.html${queryParams}`;
 }
@@ -14,7 +14,7 @@ function handleKeyPress(event) {
 }
 
 function search1() {
-  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const searchTerm = document.getElementById('searchInput').value;
   const queryParams = `?search=${encodeURIComponent(searchTerm)}`;
   window.location.href = `search-results.html${queryParams}`;
 }
