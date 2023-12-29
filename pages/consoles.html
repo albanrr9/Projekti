@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,9 +42,11 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                aria-label="Search"
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="return search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>

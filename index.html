@@ -20,7 +20,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -53,8 +53,8 @@
                 id="searchInput"
                 placeholder="Search..."
                 aria-label="Search"
-                onkeydown="search(event)" />
-              <button class="btn btn-danger" type="submit" onclick="search(event)">
+                onkeydown="return handleKeyPress(event)">
+              <button class="btn btn-danger" type="button" onclick="return search()">
                 <img src="img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
