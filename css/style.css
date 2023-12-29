@@ -285,3 +285,24 @@ a.btn.btn-primary {
   object-position: center;
   display: block;
 }
+
+label {
+  font-size: larger;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding: 3px;
+}
+
+#sortSelect, #filterSelect {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  color: #f8f8f8;
+  background-color: #333;
+}
+
+/* Style on hover */
+select:hover {
+  border-color: #666;
+}

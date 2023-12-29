@@ -12,6 +12,7 @@ function handleKeyPress(event) {
     return search();
   }
 }
+
 function search1() {
   const searchTerm = document.getElementById('searchInput').value.toLowerCase();
   const queryParams = `?search=${encodeURIComponent(searchTerm)}`;
