@@ -43,9 +43,11 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                aria-label="Search"
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="submit" onclick="return search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
@@ -146,7 +148,7 @@
                   0.1 ms Response Time<br>
                   165Hz Refresh Rate<br>
                   3440 x 1440 Maximum Resolution</p>
-                <p class="card-text"><strong>Price:</strong> €799.99</p>
+                <p class="card-text"><strong>Price:</strong> €799</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
