@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,9 +42,11 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                aria-label="Search"
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="return search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
@@ -131,7 +133,7 @@
                   Width: 140 cm<br>
                   Depth: 60 cm<br>
                   Height: 75 cm</p>
-                <p class="card-text"><strong>Price:</strong> €99.50</p>
+                <p class="card-text"><strong>Price:</strong> €99</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -189,7 +191,7 @@
                   Width: 140 cm<br>
                   Depth: 60 cm<br>
                   Height: 76 cm</p>
-                <p class="card-text"><strong>Price:</strong> €174.99</p>
+                <p class="card-text"><strong>Price:</strong> €175</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -247,7 +249,7 @@
                   Width: 155 cm<br>
                   Depth: 60 cm<br>
                   Adjustable Height: 75-122 cm</p>
-                <p class="card-text"><strong>Price:</strong> €439.99</p>
+                <p class="card-text"><strong>Price:</strong> €439</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -311,7 +313,7 @@
                   Width: 198 cm<br>
                   Depth: 85 cm<br>
                   Height: 76 cm</p>
-                <p class="card-text"><strong>Price:</strong> €129.99</p>
+                <p class="card-text"><strong>Price:</strong> €129</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>

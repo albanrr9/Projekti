@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,9 +42,11 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                aria-label="Search"
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="return search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
@@ -86,19 +88,22 @@
                   <button type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-pc.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-1/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-1/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/tv.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-1/3.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/products/gaming-keyboards-category/product-1/4.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -117,9 +122,12 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">SteelSeries - Apex Pro 2023</h5>
+                <p class="card-text">Keyboard Technology: Mechanical<br>
+                Form Factor: Tenkeyless (TKL)<br>
+                Connection Type: Wireless<br>
+                Key Switches: OmniPoint 2.0 Adjustable HyperMagnetic Switches</p>
+                <p class="card-text"><strong>Price:</strong> €199</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -138,19 +146,22 @@
                   <button type="button"
                     data-bs-target="#carouselExampleIndicators1"
                     data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button"
+                    data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/consoles.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-2/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-chair.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-2/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-2/3.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/products/gaming-keyboards-category/product-2/4.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -169,9 +180,12 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Corsair - K70</h5>
+                <p class="card-text">Keyboard Technology: Optical<br>
+                Form Factor: Tenkeyless (TKL)<br>
+                Connection Type: USB Type-C<br>
+                Key Switches: CORSAIR OPX Optical-Mechanical</p>
+                <p class="card-text"><strong>Price:</strong> €129</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -193,16 +207,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-laptop.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-3/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-monitor.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-3/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gift-cards.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-3/3.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -221,9 +232,12 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">White Shark - SHINOBI</h5>
+                <p class="card-text">Keyboard Technology: Mechanical<br>
+                Form Factor: 60%<br>
+                Connection Type: USB Type-C<br>
+                Key Switches: OUTEMU Red Switches</p>
+                <p class="card-text"><strong>Price:</strong> €45</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -245,16 +259,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-mouse.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-4/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-4/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-keyboards-category/product-4/3.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -273,9 +284,12 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">White Shark - RONIN</h5>
+                <p class="card-text">Keyboard Technology: Membrane<br>
+                Form Factor: 65%<br>
+                Connection Type: USB 2.0<br>
+                Key Switches: Membrane</p>
+                <p class="card-text"><strong>Price:</strong> €25</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>

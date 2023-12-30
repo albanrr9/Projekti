@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
 
   <body id="TechNova">
@@ -37,8 +37,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <form class="d-flex" role="search">
               <input class="form-control me-2 search-input" type="text"
-                placeholder="Search..." aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                id="searchInput" placeholder="Search..." aria-label="Search" 
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="return search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
@@ -126,7 +127,7 @@
                   HDR 10+<br>
                   Tizen Smart Platform<br>
                   2023 Model Year</p>
-                <p class="card-text"><strong>Price:</strong> €1499.99</p>
+                <p class="card-text"><strong>Price:</strong> €1499</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -188,7 +189,7 @@
                   HDR 10<br>
                   Google TV Smart Platform<br>
                   2023 Model Year</p>
-                <p class="card-text"><strong>Price:</strong> €1499.99</p>
+                <p class="card-text"><strong>Price:</strong> €1499</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -250,7 +251,7 @@
                   HDR 10<br>
                   webOS Smart Platform<br>
                   2023 Model Year</p>
-                <p class="card-text"><strong>Price:</strong> €1299.99</p>
+                <p class="card-text"><strong>Price:</strong> €1299</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -312,7 +313,7 @@
                   HDR 10+<br>
                   Google TV Smart Platform<br>
                   2023 Model Year</p>
-                <p class="card-text"><strong>Price:</strong> €699.99</p>
+                <p class="card-text"><strong>Price:</strong> €699</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>

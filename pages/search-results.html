@@ -99,15 +99,20 @@
         </div>
         <div class="col-6">
           <label for="filterSelect">Filter By:</label>
-          <select
-            class="form-control"
-            id="filterSelect"
-            onchange="filterResults()"
-          >
+          <select class="form-control" id="filterSelect" onchange="filterResults()">
             <option value="all">All Products</option>
-            <option value="Category 1">Category 1</option>
-            <option value="Category 2">Category 2</option>
-            <!-- Add more filtering options as needed -->
+            <option value="Gaming PC">Gaming PC</option>
+            <option value="Gaming Laptop">Gaming Laptop</option>
+            <option value="Console">Console</option>
+            <option value="Gaming Monitor">Gaming Monitor</option>
+            <option value="TV">TV</option>
+            <option value="Gaming Table">Gaming Table</option>
+            <option value="Gaming Chair">Gaming Chair</option>
+            <option value="Gaming Keyboard">Gaming Keyboard</option>
+            <option value="Gaming Mouses and accessories">Gaming Mouses and accessories</option>
+            <option value="Gaming Headset">Gaming Headset</option>
+            <option value="Videogame">Videogame</option>
+            <option value="Gift Card">Gift Card</option>
           </select>
         </div>
       </div>
@@ -115,6 +120,9 @@
         <h2>Search Results</h2>
         <div id="searchResults" class="row">
           <!-- Results will be dynamically added here using JavaScript -->
+        </div>
+        <div id="results-container" class="row row-cols-1 row-cols-lg-2 g-2">
+
         </div>
       </div>
     </main>
