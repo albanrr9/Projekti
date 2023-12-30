@@ -272,6 +272,8 @@ document.addEventListener('DOMContentLoaded', function () {
     product.name.toLowerCase().includes(lowerCsearchQuery) ||
     product.category.toLowerCase().includes(lowerCsearchQuery)
   );
+  console.log(sampleResults);
+  console.log(currentResults)
   renderResults();
 });
 
@@ -283,6 +285,26 @@ function getParameterByName(name) {
   if (!results) return null;
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function filterResults() {
+  const filterValue = document.getElementById('filterSelect').value;
+  if (filterValue === 'all') {
+    currentResults = [...sampleResults];
+  } else {
+    currentResults = sampleResults.filter(product => product.category === filterValue);
+  }
+  renderResults();
+}
+
+function sortResults() {
+  const sortValue = document.getElementById('sortSelect').value;
+  if (sortValue === 'priceAsc') {
+    currentResults.sort((a, b) => a.price - b.price);
+  } else if (sortValue === 'priceDesc') {
+    currentResults.sort((a, b) => b.price - a.price);
+  }
+  renderResults();
 }
 
 function renderResults() {
