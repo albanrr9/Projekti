@@ -1,4 +1,5 @@
 let sampleResults;
+let searchResults;
 let currentResults;
 
 const products = [
@@ -257,6 +258,38 @@ const products = [
     category: 'Gaming Keyboard',
     description: 'Keyboard Technology: Membrane<br>Form Factor: 65%<br>Connection Type: USB 2.0<br>Key Switches: Membrane',
     imageUrls: ['../img/products/gaming-keyboards-category/product-4/1.png','../img/products/gaming-keyboards-category/product-4/2.png','../img/products/gaming-keyboards-category/product-4/3.png']
+  },
+  {
+    id: 33,
+    name: 'Razer - Viper V2 Pro',
+    price: 149,
+    category: 'Gaming Mouses and accessories',
+    description: 'Maximum Sensitivity: 30000 DPI<br>Number of Buttons: 5<br>Connection Type: Wireless<br>Mouse Weight: 58g',
+    imageUrls: ['../img/products/gaming-mouse-category/product-1/1.png','../img/products/gaming-mouse-category/product-1/2.png','../img/products/gaming-mouse-category/product-1/3.png']
+  },
+  {
+    id: 34,
+    name: 'Logitech - G502 LIGHTSPEED',
+    price: 119,
+    category: 'Gaming Mouses and accessories',
+    description: 'Maximum Sensitivity: 25600 DPI<br>Number of Buttons: 11<br>Connection Type: Wireless<br>Mouse Weight: 114-130g',
+    imageUrls: ['../img/products/gaming-mouse-category/product-2/1.png','../img/products/gaming-mouse-category/product-2/2.png','../img/products/gaming-mouse-category/product-2/3.png','../img/products/gaming-mouse-category/product-2/4.png']
+  },
+  {
+    id: 35,
+    name: 'Razer - Gigantus V2',
+    price: 49,
+    category: 'Gaming Mouses and accessories',
+    description: 'Surface Type: Soft<br>Length: 1200mm<br>Width: 550mm<br>Thickness: 4mm',
+    imageUrls: ['../img/products/gaming-mouse-category/product-3/1.png','../img/products/gaming-mouse-category/product-3/2.png','../img/products/gaming-mouse-category/product-3/3.png']
+  },
+  {
+    id: 36,
+    name: 'Logitech - G440',
+    price: 19,
+    category: 'Gaming Mouses and accessories',
+    description: 'Surface Type: Hard<br>Length: 460mm<br>Width: 400mm<br>Thinkness: 3mm',
+    imageUrls: ['../img/products/gaming-mouse-category/product-4/1.png','../img/products/gaming-mouse-category/product-4/2.png','../img/products/gaming-mouse-category/product-4/3.png']
   }
   // Add more products as needed
 ];
@@ -268,12 +301,13 @@ document.addEventListener('DOMContentLoaded', function () {
   searchResultsContainer.innerHTML = '<p>Search results for: <strong>' + searchQuery + '</strong></p>';
   sampleResults = [...products];
   var lowerCsearchQuery = searchQuery.toLowerCase();
-  currentResults = sampleResults.filter(product =>
+  searchResults = sampleResults.filter(product =>
     product.name.toLowerCase().includes(lowerCsearchQuery) ||
     product.category.toLowerCase().includes(lowerCsearchQuery)
   );
   console.log(sampleResults);
-  console.log(currentResults)
+  console.log(searchResults);
+  currentResults = [...searchResults];
   renderResults();
 });
 
@@ -290,9 +324,9 @@ function getParameterByName(name) {
 function filterResults() {
   const filterValue = document.getElementById('filterSelect').value;
   if (filterValue === 'all') {
-    currentResults = [...sampleResults];
+    currentResults = [...searchResults];
   } else {
-    currentResults = sampleResults.filter(product => product.category === filterValue);
+    currentResults = searchResults.filter(product => product.category === filterValue);
   }
   renderResults();
 }
@@ -316,18 +350,21 @@ function renderResults() {
     productCard.className = 'col';
     productCard.innerHTML = `
       <div class="card text-bg-dark">
-        <div id="carousel-${product.id}" class="carousel slide" data-ride="carousel">
+        <div id="carousel-${product.id}" class="carousel slide">
+          <div class="carousel-indicators">
+            ${renderCarouselIndicators(product.imageUrls, product.id)}
+          </div>
           <div class="carousel-inner">
             ${renderCarouselItems(product.imageUrls)}
           </div>
-          <a class="carousel-control-prev" href="#carousel-${product.id}" role="button" data-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${product.id}" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-${product.id}" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-${product.id}" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         <div class="card-body">
           <h5 class="card-title">${product.name}</h5>
@@ -344,13 +381,13 @@ function renderResults() {
 function renderCarouselItems(imageUrls) {
   return imageUrls.map((imageUrl, index) => `
     <div class="carousel-item ${index === 0 ? 'active' : ''}">
-      <img src="${imageUrl}" class="d-block w-100" alt="Product Image">
+      <img src="${imageUrl}">
     </div>
   `).join('');
 }
 
-function renderCarouselIndicators(imageUrls) {
+function renderCarouselIndicators(imageUrls, productID) {
   return imageUrls.map((_, index) => `
-    <button type="button" data-target="#carousel" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></button>
+    <button type="button" data-bs-target="#carousel-${productID}" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></button>
   `).join('');
 }
