@@ -290,6 +290,22 @@ const products = [
     category: 'Gaming Mouses and accessories',
     description: 'Surface Type: Hard<br>Length: 460mm<br>Width: 400mm<br>Thinkness: 3mm',
     imageUrls: ['../img/products/gaming-mouse-category/product-4/1.png','../img/products/gaming-mouse-category/product-4/2.png','../img/products/gaming-mouse-category/product-4/3.png']
+  },
+  {
+    id: 37,
+    name: 'SteelSeries - Arctis Nova Pro',
+    price: 349,
+    category: 'Gaming Headset',
+    description: 'Connection Type: Wireless<br>Sound Mode: Surround 7.1<br>Supported Platforms: PC, PS, Switch<br>Frequency Response: 10Hz-22kHz<br>Battery Life: 44 hours',
+    imageUrls: ['../img/products/gaming-headsets-category/product-1/1.png','../img/products/gaming-headsets-category/product-1/2.png','../img/products/gaming-headsets-category/product-1/3.png']
+  },
+  {
+    id: 38,
+    name: 'HyperX - Cloud III',
+    price: 89,
+    category: 'Gaming Headset',
+    description: 'Connection Type: Wired<br>Sound Mode: dtsX<br>Supported Platforms: PC, PS, Xbox, Switch, Mobile<br>Frequency Response: 10Hz-21kHz<br>Cable Connector: Type-C, Type-A, 3.5mm',
+    imageUrls: ['../img/products/gaming-headsets-category/product-2/1.png','../img/products/gaming-headsets-category/product-2/2.png','../img/products/gaming-headsets-category/product-2/3.png']
   }
   // Add more products as needed
 ];

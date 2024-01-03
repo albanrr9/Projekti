@@ -86,100 +86,111 @@
           </div>
         </div>
       </nav>
-    </div>
-    <main class="arr-searchresults">
-      <div class="row">
-        <div class="col-6">
-          <label for="sortSelect">Sort By:</label>
-          <select class="form-control" id="sortSelect" onchange="sortResults()">
-            <option value="" disabled selected>Default</option>
-            <option value="priceAsc">Price: Low to High</option>
-            <option value="priceDesc">Price: High to Low</option>
-            <!-- Add more sorting options as needed -->
-          </select>
+      <main class="arr-searchresults">
+        <div class="row">
+          <div class="col-6">
+            <label for="sortSelect">Sort By:</label>
+            <select
+              class="form-control"
+              id="sortSelect"
+              onchange="sortResults()"
+            >
+              <option value="" disabled selected>Default</option>
+              <option value="priceAsc">Price: Low to High</option>
+              <option value="priceDesc">Price: High to Low</option>
+              <!-- Add more sorting options as needed -->
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="filterSelect">Filter By:</label>
+            <select
+              class="form-control"
+              id="filterSelect"
+              onchange="filterResults()"
+            >
+              <option value="all">All Products</option>
+              <option value="Gaming PC">Gaming PC</option>
+              <option value="Gaming Laptop">Gaming Laptop</option>
+              <option value="Console">Console</option>
+              <option value="Gaming Monitor">Gaming Monitor</option>
+              <option value="TV">TV</option>
+              <option value="Gaming Table">Gaming Table</option>
+              <option value="Gaming Chair">Gaming Chair</option>
+              <option value="Gaming Keyboard">Gaming Keyboard</option>
+              <option value="Gaming Mouses and accessories">
+                Gaming Mouses and accessories
+              </option>
+              <option value="Gaming Headset">Gaming Headset</option>
+              <option value="Videogame">Videogame</option>
+              <option value="Gift Card">Gift Card</option>
+            </select>
+          </div>
         </div>
-        <div class="col-6">
-          <label for="filterSelect">Filter By:</label>
-          <select class="form-control" id="filterSelect" onchange="filterResults()">
-            <option value="all">All Products</option>
-            <option value="Gaming PC">Gaming PC</option>
-            <option value="Gaming Laptop">Gaming Laptop</option>
-            <option value="Console">Console</option>
-            <option value="Gaming Monitor">Gaming Monitor</option>
-            <option value="TV">TV</option>
-            <option value="Gaming Table">Gaming Table</option>
-            <option value="Gaming Chair">Gaming Chair</option>
-            <option value="Gaming Keyboard">Gaming Keyboard</option>
-            <option value="Gaming Mouses and accessories">Gaming Mouses and accessories</option>
-            <option value="Gaming Headset">Gaming Headset</option>
-            <option value="Videogame">Videogame</option>
-            <option value="Gift Card">Gift Card</option>
-          </select>
+        <div class="row arr-searchkeyword">
+          <h2>Search Results</h2>
+          <div id="searchResults" class="row">
+            <!-- Results will be dynamically added here using JavaScript -->
+          </div>
         </div>
-      </div>
-      <div class="row arr-searchkeyword">
-        <h2>Search Results</h2>
-        <div id="searchResults" class="row">
+        <div id="results-container" class="row row-cols-1 row-cols-lg-2 g-2">
           <!-- Results will be dynamically added here using JavaScript -->
         </div>
-      </div>
-      <div id="results-container" class="row row-cols-1 row-cols-lg-2 g-2">
-
-      </div>
-      
-    </main>
-    <footer class="text-bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 arr-about-us">
-            <h3>About Us</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              vitae elit libero, a pharetra augue.
-            </p>
+      </main>
+      <footer class="text-bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 arr-about-us">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                vitae elit libero, a pharetra augue.
+              </p>
+            </div>
+            <div class="col-md-4 arr-contact-us">
+              <h3>Contact Us</h3>
+              <p>195 Magjistralja Adriatiku, Mitrovicë, Kosovë</p>
+              <p>
+                Email:
+                <a href="mailto:alban.rrahmani@umib.net"
+                  >alban.rrahmani@umib.net</a
+                >
+              </p>
+              <p>Phone: <a href="tel:+38349698858">+383 49 698 858</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <div class="arr-social-media">
+                <a
+                  href="https://www.facebook.com/alban.rrahmani.798"
+                  target="_blank"
+                >
+                  <div class="arr-social-media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <p>Facebook</p>
+                  </div>
+                </a>
+                <a href="https://www.x.com/AlbanRrahmani4" target="_blank">
+                  <div class="arr-social-media-icons">
+                    <i class="fab fa-x-twitter"></i>
+                    <p>X</p>
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/albanrr21" target="_blank">
+                  <div class="arr-social-media-icons">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 arr-contact-us">
-            <h3>Contact Us</h3>
-            <p>195 Magjistralja Adriatiku, Mitrovicë, Kosovë</p>
-            <p>
-              Email:
-              <a
-                href="mailto:alban.rrahmani@umib.net">alban.rrahmani@umib.net</a>
-            </p>
-            <p>Phone: <a href="tel:+38349698858">+383 49 698 858</a></p>
-          </div>
-          <div class="col-md-4">
-            <h3>Follow Us</h3>
-            <div class="arr-social-media">
-              <a
-                href="https://www.facebook.com/alban.rrahmani.798"
-                target="_blank">
-                <div class="arr-social-media-icons">
-                  <i class="fab fa-facebook"></i>
-                  <p>Facebook</p>
-                </div>
-              </a>
-              <a href="https://www.x.com/AlbanRrahmani4" target="_blank">
-                <div class="arr-social-media-icons">
-                  <i class="fab fa-x-twitter"></i>
-                  <p>X</p>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/albanrr21" target="_blank">
-                <div class="arr-social-media-icons">
-                  <i class="fab fa-instagram"></i>
-                  <p>Instagram</p>
-                </div>
-              </a>
+          <div class="row">
+            <div class="col-12 arr-copyright">
+              <p><small>© 2019-2023, TechNova.com, Inc.</small></p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 arr-copyright">
-            <p><small>© 2019-2023, TechNova.com, Inc.</small></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,10 +42,12 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
-                <img src="../img/navbar/magnifying-glass.png" alt />
+                aria-label="Search"
+                onkeydown="return handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button">
+                <img src="../img/navbar/magnifying-glass.png" onclick="return search1()">
               </button>
             </form>
             <ul class="navbar-nav">
@@ -89,16 +91,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-pc.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-1/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-1/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/tv.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-1/3.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -117,9 +116,13 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">SteelSeries - Arctis Nova Pro</h5>
+                <p class="card-text">Connection Type: Wireless<br>
+                Sound Mode: Surround 7.1<br>
+                Supported Platforms: PC, PS, Switch<br>
+                Frequency Response: 10Hz-22kHz<br>
+                Battery Life: 44 hours</p>
+                <p class="card-text"><strong>Price:</strong> €349</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -141,16 +144,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/consoles.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-2/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-chair.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-2/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-2/3.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -169,9 +169,13 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">HyperX - Cloud III</h5>
+                <p class="card-text">Connection Type: Wired<br>
+                Sound Mode: dtsX<br>
+                Supported Platforms: PC, PS, Xbox, Switch, Mobile<br>
+                Frequency Response: 10Hz-21kHz<br>
+                Cable Connector: Type-C, Type-A, 3.5mm</p>
+                <p class="card-text"><strong>Price:</strong> €89</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -190,19 +194,22 @@
                   <button type="button"
                     data-bs-target="#carouselExampleIndicators2"
                     data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-laptop.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-3/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-monitor.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-3/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gift-cards.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-3/3.png">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/products/gaming-headsets-category/product-3/4.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -221,9 +228,13 @@
                 </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Logitech - PRO X 2 LIGHTSPEED</h5>
+                <p class="card-text">Connection Type: Wireless<br>
+                Sound Mode: Surround 7.1, dtsX 2.0<br>
+                Supported Platforms: PC, PS, Switch<br>
+                Frequency Response: 20Hz-20kHz<br>
+                Battery Life: 50 hours</p>
+                <p class="card-text"><strong>Price:</strong> €240</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -245,16 +256,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-mouse.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-4/1.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-4/2.png">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gaming-headsets-category/product-4/3.png">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button"
@@ -290,7 +298,7 @@
             <div class="col-md-4 arr-about-us">
               <h3>About Us</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                Lorem ipsum dolor sitp amet, consectetur adipiscing elit. Nulla
                 vitae elit libero, a pharetra augue.
               </p>
             </div>
