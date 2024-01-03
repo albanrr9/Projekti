@@ -87,11 +87,12 @@
         </div>
       </nav>
     </div>
-    <main class="arr-gallery">
+    <main class="arr-searchresults">
       <div class="row">
         <div class="col-6">
           <label for="sortSelect">Sort By:</label>
           <select class="form-control" id="sortSelect" onchange="sortResults()">
+            <option value="" disabled selected>Default</option>
             <option value="priceAsc">Price: Low to High</option>
             <option value="priceDesc">Price: High to Low</option>
             <!-- Add more sorting options as needed -->
@@ -116,7 +117,7 @@
           </select>
         </div>
       </div>
-      <div class="row">
+      <div class="row arr-searchkeyword">
         <h2>Search Results</h2>
         <div id="searchResults" class="row">
           <!-- Results will be dynamically added here using JavaScript -->
