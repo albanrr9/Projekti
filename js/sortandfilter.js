@@ -354,10 +354,41 @@ const products = [
     category: 'Videogames',
     description: 'Experience intense, futuristic warfare in Call of Duty: Black Ops 3. Engage in high-tech combat, navigate a gripping campaign, and master advanced weaponry. With adrenaline-pumping multiplayer modes and a thrilling co-op experience, Black Ops 3 delivers a fast-paced, action-packed gaming adventure for FPS enthusiasts.',
     imageUrls: ['../img/products/videogames-category/product-4/1.png']
+  },
+  {
+    id: 45,
+    name: 'Steam Wallet 20€',
+    price: 20,
+    category: 'Gift Card',
+    description: 'Unlock a world of gaming possibilities with a 20 Euro Steam Gift Card. This digital voucher lets you or your loved ones instantly access and enjoy a wide range of games, software, and digital content on the Steam platform. Perfect for any gamers wishlist!',
+    imageUrls: ['../img/products/gift-cards-category/product-1/1.png']
+  },
+  {
+    id: 46,
+    name: 'Xbox Gift Card 20€',
+    price: 20,
+    category: 'Gift Card',
+    description: 'A great gift for gamers. With an Xbox Gift Card, give the freedom to pick the gift they want. It can be used to buy the hottest new Xbox full game downloads, apps, movies, TV shows, devices, and more. There are no fees or expiration dates to worry about.',
+    imageUrls: ['../img/products/gift-cards-category/product-2/1.png']
+  },
+  {
+    id: 47,
+    name: 'PlayStation Gift Card 20€',
+    price: 20,
+    category: 'Gift Card',
+    description: 'Elevate your gaming experience with a PlayStation Gift Card. This digital voucher grants you access to a world of content on the PlayStation Store, including games, add-ons, movies, and more.',
+    imageUrls: ['../img/products/gift-cards-category/product-3/1.png']
+  },
+  {
+    id: 48,
+    name: 'Nintendo eShop 15€',
+    price: 15,
+    category: 'Gift Card',
+    description: 'Level up your Nintendo gaming adventure with a 15 Euro Nintendo eShop Gift Card. Instantly add funds to your Nintendo account and explore a treasure trove of games, downloadable content, and more on the Nintendo eShop.',
+    imageUrls: ['../img/products/gift-cards-category/product-4/1.png']
   }
   // Add more products as needed
 ];
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var searchQuery = getParameterByName('search');
@@ -434,7 +465,7 @@ function renderResults() {
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">${product.description}</p>
           <p class="card-text">Price: €${product.price.toFixed(2)}</p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
+          <button class="btn btn-primary" onclick="addToCart('${product.name}', '${product.imageUrls[0]}', ${product.price})">Add to Cart</button>
         </div>
       </div>
     `;

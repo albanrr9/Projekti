@@ -19,7 +19,9 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/addtocart.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,10 +44,12 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
-                <img src="../img/navbar/magnifying-glass.png" alt />
+                aria-label="Search"
+                onkeydown="handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="search1()">
+                <img src="../img/navbar/magnifying-glass.png">
               </button>
             </form>
             <ul class="navbar-nav">
@@ -75,208 +79,68 @@
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-pc.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/tv.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/gift-cards-category/product-1/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <h5 class="card-title">Steam Wallet 20€</h5>
+                <p class="card-text">Unlock a world of gaming possibilities with a 20 Euro Steam Gift Card. This digital voucher lets you or your loved ones instantly access and enjoy a wide range of games, software, and digital content on the Steam platform. Perfect for any gamer's wishlist!</p>
+                <p class="card-text"><strong>Price:</strong> €20</p>
+                <button class="btn btn-primary" onclick="addToCart('Steam Wallet 20€', '../img/products/gift-cards-category/product-1/1.png', 20)">Add to Cart</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators1" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/consoles.jpg" class="d-block w-100"
-                      alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-chair.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gift-cards-category/product-2/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <h5 class="card-title">Xbox Gift Card 20€</h5>
+                <p class="card-text">A great gift for gamers. With an Xbox Gift Card, give the freedom to pick the gift they want. It can be used to buy the hottest new Xbox full game downloads, apps, movies, TV shows, devices, and more. There are no fees or expiration dates to worry about.</p>
+                <p class="card-text"><strong>Price:</strong> €20</p>
+                <button class="btn btn-primary" onclick="addToCart('Xbox Gift Card 20€', '../img/products/gift-cards-category/product-2/1.png', 20)">Add to Cart</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators2" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-laptop.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-monitor.jpg"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gift-cards.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gift-cards-category/product-3/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <h5 class="card-title">PlayStation Gift Card 20€</h5>
+                <p class="card-text">Elevate your gaming experience with a PlayStation Gift Card. This digital voucher grants you access to a world of content on the PlayStation Store, including games, add-ons, movies, and more.</p>
+                <p class="card-text"><strong>Price:</strong> €20</p>
+                <button class="btn btn-primary" onclick="addToCart('PlayStation Gift Card 20€', '../img/products/gift-cards-category/product-3/1.png', 20)">Add to Cart</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators3" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-mouse.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/gift-cards-category/product-4/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <h5 class="card-title">Nintendo eShop 15€</h5>
+                <p class="card-text">Level up your Nintendo gaming adventure with a 15 Euro Nintendo eShop Gift Card. Instantly add funds to your Nintendo account and explore a treasure trove of games, downloadable content, and more on the Nintendo eShop.</p>
+                <p class="card-text"><strong>Price:</strong> €15</p>
+                <button class="btn btn-primary" onclick="addToCart('Nintendo eShop 15€', '../img/products/gift-cards-category/product-4/1.png', 15)">Add to Cart</button>
               </div>
             </div>
           </div>

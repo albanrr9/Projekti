@@ -158,11 +158,11 @@ footer .row {
   padding: 15px;
 }
 
-a.btn.btn-primary {
+button.btn.btn-primary {
   justify-self: end;
   align-self: flex-end;
-  background-color: var(--button-color);
-  border-color: var(--button-color);
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 
 /*Style properties for Desktop*/
