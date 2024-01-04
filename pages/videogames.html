@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
   </head>
   <body id="TechNova">
     <div class="arr-wrapper">
@@ -42,9 +42,11 @@
               <input
                 class="form-control me-2 search-input"
                 type="text"
+                id="searchInput"
                 placeholder="Search..."
-                aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+                aria-label="Search"
+                onkeydown="handleKeyPress1(event)">
+              <button class="btn btn-danger" type="button" onclick="search1()">
                 <img src="../img/navbar/magnifying-glass.png" alt />
               </button>
             </form>
@@ -75,51 +77,16 @@
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-pc.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/tv.jpg" class="d-block w-100"
-                      alt="...">
+                    <img src="../img/products/videogames-category/product-1/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Grand Theft Auto V</h5>
+                <p class="card-text">Dive into the chaos of Los Santos with Grand Theft Auto V. Explore a vast open world, switch between three protagonists, and pull off heart-pounding heists. With stunning graphics and an adrenaline-fueled multiplayer, GTA V offers an unparalleled gaming experience for action enthusiasts.</p>
+                <p class="card-text"><strong>Price:</strong> €30</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -127,51 +94,16 @@
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators1" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators1"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/consoles.jpg" class="d-block w-100"
-                      alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-chair.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/videogames-category/product-2/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Red Dead Redemption II</h5>
+                <p class="card-text">Embark on an epic Wild West journey with Red Dead Redemption 2. Roam vast landscapes, live the life of an outlaw, and navigate a gripping narrative in this critically acclaimed action-adventure. With stunning visuals, immersive gameplay, and a rich open-world experience, Red Dead Redemption 2 delivers a frontier tale like no other.</p>
+                <p class="card-text"><strong>Price:</strong> €60</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -179,51 +111,16 @@
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators2" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators2"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-laptop.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-monitor.jpg"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gift-cards.png"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/videogames-category/product-3/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Minecraft</h5>
+                <p class="card-text">Unleash your creativity in Minecraft, a sandbox phenomenon where you shape your world. Mine resources, build structures, and embark on endless adventures in a pixelated realm. With limitless possibilities and a vibrant community, Minecraft is the ultimate sandbox for gamers of all ages.</p>
+                <p class="card-text"><strong>Price:</strong> €30</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>
@@ -231,51 +128,16 @@
           <div class="col">
             <div class="card text-bg-dark">
               <div id="carouselExampleIndicators3" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/gallery/gaming-mouse.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-keyboard.png"
-                      class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/gallery/gaming-headset.jpg"
-                      class="d-block w-100" alt="...">
+                    <img src="../img/products/videogames-category/product-4/1.png">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text">Product description.</p>
-                <p class="card-text"><strong>Price:</strong> $19.99</p>
+                <h5 class="card-title">Call of Duty - Black Ops III</h5>
+                <p class="card-text">Experience intense, futuristic warfare in Call of Duty: Black Ops 3. Engage in high-tech combat, navigate a gripping campaign, and master advanced weaponry. With adrenaline-pumping multiplayer modes and a thrilling co-op experience, Black Ops 3 delivers a fast-paced, action-packed gaming adventure for FPS enthusiasts.</p>
+                <p class="card-text"><strong>Price:</strong> €60</p>
                 <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
             </div>

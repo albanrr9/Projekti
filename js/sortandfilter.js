@@ -306,6 +306,54 @@ const products = [
     category: 'Gaming Headset',
     description: 'Connection Type: Wired<br>Sound Mode: dtsX<br>Supported Platforms: PC, PS, Xbox, Switch, Mobile<br>Frequency Response: 10Hz-21kHz<br>Cable Connector: Type-C, Type-A, 3.5mm',
     imageUrls: ['../img/products/gaming-headsets-category/product-2/1.png','../img/products/gaming-headsets-category/product-2/2.png','../img/products/gaming-headsets-category/product-2/3.png']
+  },
+  {
+    id: 39,
+    name: 'Logitech - PRO X 2 LIGHTSPEED',
+    price: 240,
+    category: 'Gaming Headset',
+    description: 'Connection Type: Wireless<br>Sound Mode: Surround 7.1, dtsX 2.0<br>Supported Platforms: PC, PS, Switch<br>Frequency Response: 20Hz-20kHz<br>Battery Life: 50 hours',
+    imageUrls: ['../img/products/gaming-headsets-category/product-3/1.png','../img/products/gaming-headsets-category/product-3/2.png','../img/products/gaming-headsets-category/product-3/3.png','../img/products/gaming-headsets-category/product-3/4.png']
+  },
+  {
+    id: 40,
+    name: 'Razer - Kaira X',
+    price: 59,
+    category: 'Gaming Headset',
+    description: 'Connection Type: Wired<br>Sound Mode: Surround 7.1<br>Supported Platforms: PC, PS, Xbox, Switch, Mobile<br>Frequency Response: 20Hz-20kHz<br>Cable Connector: 3.5mm',
+    imageUrls: ['../img/products/gaming-headsets-category/product-4/1.png','../img/products/gaming-headsets-category/product-4/2.png','../img/products/gaming-headsets-category/product-4/3.png']
+  },
+  {
+    id: 41,
+    name: 'Grand Theft Auto V',
+    price: 30,
+    category: 'Videogames',
+    description: 'Dive into the chaos of Los Santos with Grand Theft Auto V. Explore a vast open world, switch between three protagonists, and pull off heart-pounding heists. With stunning graphics and an adrenaline-fueled multiplayer, GTA V offers an unparalleled gaming experience for action enthusiasts.',
+    imageUrls: ['../img/products/videogames-category/product-1/1.png']
+  },
+  {
+    id: 42,
+    name: 'Red Dead Redemption II',
+    price: 60,
+    category: 'Videogames',
+    description: 'Embark on an epic Wild West journey with Red Dead Redemption 2. Roam vast landscapes, live the life of an outlaw, and navigate a gripping narrative in this critically acclaimed action-adventure. With stunning visuals, immersive gameplay, and a rich open-world experience, Red Dead Redemption 2 delivers a frontier tale like no other.',
+    imageUrls: ['../img/products/videogames-category/product-2/1.png']
+  },
+  {
+    id: 43,
+    name: 'Minecraft',
+    price: 30,
+    category: 'Videogames',
+    description: 'Unleash your creativity in Minecraft, a sandbox phenomenon where you shape your world. Mine resources, build structures, and embark on endless adventures in a pixelated realm. With limitless possibilities and a vibrant community, Minecraft is the ultimate sandbox for gamers of all ages.',
+    imageUrls: ['../img/products/videogames-category/product-3/1.png']
+  },
+  {
+    id: 44,
+    name: 'Call of Duty - Black Ops III',
+    price: 60,
+    category: 'Videogames',
+    description: 'Experience intense, futuristic warfare in Call of Duty: Black Ops 3. Engage in high-tech combat, navigate a gripping campaign, and master advanced weaponry. With adrenaline-pumping multiplayer modes and a thrilling co-op experience, Black Ops 3 delivers a fast-paced, action-packed gaming adventure for FPS enthusiasts.',
+    imageUrls: ['../img/products/videogames-category/product-4/1.png']
   }
   // Add more products as needed
 ];

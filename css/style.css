@@ -66,7 +66,6 @@
 }
 
 .card-title {
-  font-size: 175%;
   font-weight: 600;
   text-shadow: 4px 4px 4px black;
 }
@@ -77,6 +76,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 footer {
@@ -154,7 +157,6 @@ footer .row {
   text-align: center;
   padding: 15px;
 }
-
 
 a.btn.btn-primary {
   justify-self: end;
