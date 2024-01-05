@@ -43,18 +43,15 @@ function renderResults() {
     // ...
     
     const productCard = document.createElement('div');
-    productCard.className = 'col';
+    productCard.className = 'card text-bg-dark';
     productCard.innerHTML = `
-      <div class="card text-bg-dark">
-        <div class="arr-cart" id="cart-${product.name}">
-          <div>
-            <img class="arr-cartImg" src="${product.imageUrl}">
-          </div>
-          <div class="arr-info">
-            <h5>${product.name}</h5>
-            <h5>${product.quantity}</h5>
-          </div>
-          
+      <div class="arr-cart" id="cart-${product.name}">
+        <div class="arr-cartImg">
+          <img src="${product.imageUrl}">
+        </div>
+        <div class="arr-info">
+          <h6 class="card-title">${product.name}</h6>
+          <h6 class="card-title">${product.quantity}</h6>
         </div>
       </div>
     `;

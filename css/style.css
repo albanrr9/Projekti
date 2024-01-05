@@ -20,11 +20,7 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  background: radial-gradient(circle,
-      rgba(59, 38, 0, 1) 0%,
-      rgba(51, 51, 51, 1) 32%,
-      rgba(0, 43, 85, 1) 59%,
-      rgba(0, 107, 107, 1) 100%);
+  background: radial-gradient(circle, rgba(59, 38, 0, 1) 0%, rgba(51, 51, 51, 1) 32%, rgba(0, 43, 85, 1) 59%, rgba(0, 107, 107, 1) 100%);
 }
 
 #welcome-message-h1 {
@@ -330,8 +326,15 @@ select:hover {
 .arr-cartImg {
   width: 20vw;
   aspect-ratio: 1/1;
+}
+
+.arr-cartImg img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: center;
+  
+  padding: 10px;
 }
 
 .arr-cart {
@@ -346,4 +349,8 @@ select:hover {
   justify-content: space-between;
   width: 100%;
   padding-right: 5vw;
+}
+
+.card:nth-child(even) {
+  background-color: rgb(45, 45, 45) !important;
 }
