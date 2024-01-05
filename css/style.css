@@ -326,3 +326,24 @@ select:hover {
   color: white;
   text-shadow: 3px 3px 3px black
 }
+
+.arr-cartImg {
+  width: 20vw;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: center;
+}
+
+.arr-cart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.arr-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 5vw;
+}
