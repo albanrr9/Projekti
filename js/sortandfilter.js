@@ -486,3 +486,11 @@ function renderCarouselIndicators(imageUrls, productID) {
     <button type="button" data-bs-target="#carousel-${productID}" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></button>
   `).join('');
 }
+
+const cart = [];
+
+function addToCart(productName, productImage, productPrice) {
+  const product = {name: productName, imageUrl: productImage, price: productPrice};
+  cart.push(product);
+  console.log("Product added to cart:", product);
+}
