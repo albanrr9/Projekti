@@ -9,4 +9,3 @@ function addToCart(productName, productImage, productPrice) {
   console.log("Product added to cart:", product);
 }
 
-export { cart, addToCart };
