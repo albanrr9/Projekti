@@ -44,7 +44,7 @@ addToCart3Button.addEventListener('click', showCartAlert);
 function showCartAlert() {
   // Create a new div element for the alert
   const alertDiv = document.createElement('div');
-  alertDiv.classList.add('cart-alert');
+  alertDiv.classList.add('arr-cart-alert');
 
   // Set the alert text
   alertDiv.innerText = 'Product added to cart';
