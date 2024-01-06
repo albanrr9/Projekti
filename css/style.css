@@ -232,6 +232,7 @@ button.btn.btn-primary {
 
   #navlink1 {
     margin-left: 0 !important;
+    display: none;
   }
 }
 
@@ -277,6 +278,7 @@ button.btn.btn-primary {
 
 #navlink1 {
   margin-left: 55px;
+  visibility: hidden;
 }
 
 .carousel-item {
@@ -353,4 +355,20 @@ select:hover {
 
 .card:nth-child(even) {
   background-color: rgb(45, 45, 45) !important;
+}
+
+/* Add this to your CSS file or style section */
+.cart-alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arr-body {
+  background: radial-gradient(circle, rgba(59, 38, 0, 1) 0%, rgba(51, 51, 51, 1) 32%, rgba(0, 43, 85, 1) 59%, rgba(0, 107, 107, 1) 100%);
 }

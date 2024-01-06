@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js"></script>
+    <script src="../js/search.js" defer></script>
     <script src="../js/cart.js"></script>
   </head>
   <body id="TechNova">
@@ -63,7 +63,7 @@
                   <p class="nav-link-name">Cart</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img
+                <a class="nav-link" href="signin.html"><img
                     src="../img/navbar/user.png" />
                   <p class="nav-link-name">Sign In</p></a>
               </li>
@@ -129,7 +129,7 @@
                 Connection Type: Wireless<br>
                 Key Switches: OmniPoint 2.0 Adjustable HyperMagnetic Switches</p>
                 <p class="card-text"><strong>Price:</strong> €199</p>
-                <button class="btn btn-primary" onclick="addToCart('SteelSeries - Apex Pro 2023', '../img/products/gaming-keyboards-category/product-1/1.png', 199)">Add to Cart</button>
+                <button id="addToCart" class="btn btn-primary" onclick="addToCart('SteelSeries - Apex Pro 2023', '../img/products/gaming-keyboards-category/product-1/1.png', 199)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
                 Connection Type: USB Type-C<br>
                 Key Switches: CORSAIR OPX Optical-Mechanical</p>
                 <p class="card-text"><strong>Price:</strong> €129</p>
-                <button class="btn btn-primary" onclick="addToCart('Corsair - K70', '../img/products/gaming-keyboards-category/product-2/1.png', 129)">Add to Cart</button>
+                <button id="addToCart1" class="btn btn-primary" onclick="addToCart('Corsair - K70', '../img/products/gaming-keyboards-category/product-2/1.png', 129)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@
                 Connection Type: USB Type-C<br>
                 Key Switches: OUTEMU Red Switches</p>
                 <p class="card-text"><strong>Price:</strong> €45</p>
-                <button class="btn btn-primary" onclick="addToCart('White Shark - SHINOBI', '../img/products/gaming-keyboards-category/product-3/1.png', 45)">Add to Cart</button>
+                <button id="addToCart2" class="btn btn-primary" onclick="addToCart('White Shark - SHINOBI', '../img/products/gaming-keyboards-category/product-3/1.png', 45)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@
                 Connection Type: USB 2.0<br>
                 Key Switches: Membrane</p>
                 <p class="card-text"><strong>Price:</strong> €25</p>
-                <button class="btn btn-primary" onclick="addToCart('White Shark - RONIN', '../img/products/gaming-keyboards-category/product-4/1.png', 25)">Add to Cart</button>
+                <button id="addToCart3" class="btn btn-primary" onclick="addToCart('White Shark - RONIN', '../img/products/gaming-keyboards-category/product-4/1.png', 25)">Add to Cart</button>
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js"></script>
+    <script src="../js/search.js" defer></script>
     <script src="../js/cart.js"></script>
   </head>
   <body id="TechNova">
@@ -63,7 +63,7 @@
                   <p class="nav-link-name">Cart</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img
+                <a class="nav-link" href="signin.html"><img
                     src="../img/navbar/user.png" />
                   <p class="nav-link-name">Sign In</p></a>
               </li>
@@ -139,7 +139,7 @@
                   Material: Faux Leather<br>
                   Chair Weight: 20 KG</p>
                 <p class="card-text"><strong>Price:</strong> €249</p>
-                <button class="btn btn-primary" onclick="addToCart('X Rocker Pedestal', '../img/products/gaming-chairs-category/product-1/1.png', 249)">Add to Cart</button>
+                <button id="addToCart" class="btn btn-primary" onclick="addToCart('X Rocker Pedestal', '../img/products/gaming-chairs-category/product-1/1.png', 249)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -193,7 +193,7 @@
                   Material: Leatherette, Weave Fabric<br>
                   Chair Weight: 30.5 KG</p>
                 <p class="card-text"><strong>Price:</strong> €339</p>
-                <button class="btn btn-primary" onclick="addToCart('ThunderX3 Core', '../img/products/gaming-chairs-category/product-2/1.png', 339)">Add to Cart</button>
+                <button id="addToCart1" class="btn btn-primary" onclick="addToCart('ThunderX3 Core', '../img/products/gaming-chairs-category/product-2/1.png', 339)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@
                   Material: Nylon, Polyurethane<br>
                   Chair Weight: 18 KG</p>
                 <p class="card-text"><strong>Price:</strong> €249</p>
-                <button class="btn btn-primary" onclick="addToCart('Corsair TC100', '../img/products/gaming-chairs-category/product-3/1.png', 249)">Add to Cart</button>
+                <button id="addToCart2" class="btn btn-primary" onclick="addToCart('Corsair TC100', '../img/products/gaming-chairs-category/product-3/1.png', 249)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -301,7 +301,7 @@
                   Material: Faux Leather<br>
                   Chair Weight: 34.47 KG</p>
                 <p class="card-text"><strong>Price:</strong> €589</p>
-                <button class="btn btn-primary" onclick="addToCart('Secretlab Titan Evo', '../img/products/gaming-chairs-category/product-4/1.png', 589)">Add to Cart</button>
+                <button id="addToCart3" class="btn btn-primary" onclick="addToCart('Secretlab Titan Evo', '../img/products/gaming-chairs-category/product-4/1.png', 589)">Add to Cart</button>
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js"></script>
+    <script src="../js/search.js" defer></script>
     <script src="../js/cart.js"></script>
   </head>
   <body id="TechNova">
@@ -63,7 +63,7 @@
                   <p class="nav-link-name">Cart</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img
+                <a class="nav-link" href="signin.html"><img
                     src="../img/navbar/user.png" />
                   <p class="nav-link-name">Sign In</p></a>
               </li>
@@ -126,7 +126,7 @@
                   1TB M.2 SSD <br>
                   RX 6400 4GB</p>
                 <p class="card-text"><strong>Price:</strong> €689</p>
-                <button class="btn btn-primary" onclick="addToCart('Memory Gaming PC', '../img/products/gaming-pcs-category/product-3/1.png', 689)">Add to Cart</button>
+                <button id="addToCart" class="btn btn-primary" onclick="addToCart('Memory Gaming PC', '../img/products/gaming-pcs-category/product-3/1.png', 689)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@
                   500GB M.2 SSD & 2TB HDD <br>
                   RTX 3060 12GB</p>
                 <p class="card-text"><strong>Price:</strong> €1069</p>
-                <button class="btn btn-primary" onclick="addToCart('dcl24 Gaming PC', '../img/products/gaming-pcs-category/product-1/1.png', 1069)">Add to Cart</button>
+                <button id="addToCart1" class="btn btn-primary" onclick="addToCart('dcl24 Gaming PC', '../img/products/gaming-pcs-category/product-1/1.png', 1069)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@
                   1TB M.2 NVME <br>
                   RTX 3080 Ti 12GB</p>
                 <p class="card-text"><strong>Price:</strong> €2630</p>
-                <button class="btn btn-primary" onclick="addToCart('Captiva Gaming PC', '../img/products/gaming-pcs-category/product-2/1.png', 2630)">Add to Cart</button>
+                <button id="addToCart2" class="btn btn-primary" onclick="addToCart('Captiva Gaming PC', '../img/products/gaming-pcs-category/product-2/1.png', 2630)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -313,7 +313,7 @@
                   512GB SSD & 1TB HDD <br>
                   RTX 3060 12GB</p>
                 <p class="card-text"><strong>Price:</strong> €1419</p>
-                <button class="btn btn-primary" onclick="addToCart('ROG STRIX Gaming PC', '../img/products/gaming-pcs-category/product-4/1.png', 1419)">Add to Cart</button>
+                <button id="addToCart3" class="btn btn-primary" onclick="addToCart('ROG STRIX Gaming PC', '../img/products/gaming-pcs-category/product-4/1.png', 1419)">Add to Cart</button>
               </div>
             </div>
           </div>

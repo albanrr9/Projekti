@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js"></script>
+    <script src="../js/search.js" defer></script>
     <script src="../js/cart.js"></script>
   </head>
   <body id="TechNova">
@@ -63,7 +63,7 @@
                   <p class="nav-link-name">Cart</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img
+                <a class="nav-link" href="signin.html"><img
                     src="../img/navbar/user.png" />
                   <p class="nav-link-name">Sign In</p></a>
               </li>
@@ -125,7 +125,7 @@
                   DualSense™ Wireless Controller<br>
                   1TB SSD</p>
                 <p class="card-text"><strong>Price:</strong> €449</p>
-                <button class="btn btn-primary" onclick="addToCart('Sony Playstation 5', '../img/products/consoles-category/product-1/1.png', 449)">Add to Cart</button>
+                <button id="addToCart" class="btn btn-primary" onclick="addToCart('Sony Playstation 5', '../img/products/consoles-category/product-1/1.png', 449)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@
                   Xbox Wireless Controller<br>
                   1TB SSD</p>
                 <p class="card-text"><strong>Price:</strong> €399</p>
-                <button class="btn btn-primary" onclick="addToCart('Xbox Series X', '../img/products/consoles-category/product-2/1.png', 399)">Add to Cart</button>
+                <button id="addToCart1" class="btn btn-primary" onclick="addToCart('Xbox Series X', '../img/products/consoles-category/product-2/1.png', 399)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -233,7 +233,7 @@
                   Nintendo Switch dock<br>
                   6.2” LCD screen</p>
                 <p class="card-text"><strong>Price:</strong> €299</p>
-                <button class="btn btn-primary" onclick="addToCart('Nintendo Switch', '../img/products/consoles-category/product-3/1.png', 299)">Add to Cart</button>
+                <button id="addToCart2" class="btn btn-primary" onclick="addToCart('Nintendo Switch', '../img/products/consoles-category/product-3/1.png', 299)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@
                 <p class="card-text">7" FHD 1080p 120Hz Display<br>
                   512GB NVMe SSD</p>
                 <p class="card-text"><strong>Price:</strong> €599</p>
-                <button class="btn btn-primary" onclick="addToCart('ASUS ROG Ally', '../img/products/consoles-category/product-4/1.png', 599)">Add to Cart</button>
+                <button id="addToCart3" class="btn btn-primary" onclick="addToCart('ASUS ROG Ally', '../img/products/consoles-category/product-4/1.png', 599)">Add to Cart</button>
               </div>
             </div>
           </div>

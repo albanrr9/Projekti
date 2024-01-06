@@ -1,5 +1,3 @@
-// cart.js
-
 // Function to retrieve and parse cart data from localStorage
 function getCartFromLocalStorage() {
   const storedCart = localStorage.getItem('cart');

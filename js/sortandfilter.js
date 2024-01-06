@@ -465,13 +465,31 @@ function renderResults() {
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">${product.description}</p>
           <p class="card-text">Price: €${product.price.toFixed(2)}</p>
-          <button class="btn btn-primary" onclick="addToCart('${product.name}', '${product.imageUrls[0]}', ${product.price})">Add to Cart</button>
+          <button class="btn btn-primary" onclick="showCartAlert(), addToCart('${product.name}', '${product.imageUrls[0]}', ${product.price})">Add to Cart</button>
         </div>
       </div>
     `;
     resultsContainer.appendChild(productCard);
   });
 }
+
+function showCartAlert() {
+  // Create a new div element for the alert
+  const alertDiv = document.createElement('div');
+  alertDiv.classList.add('cart-alert');
+
+  // Set the alert text
+  alertDiv.innerText = 'Product added to cart';
+
+  // Append the alert div to the body
+  document.body.appendChild(alertDiv);
+
+  // Set a timeout to remove the alert after a few seconds
+  setTimeout(() => {
+    alertDiv.remove();
+  }, 3000); // 3000 milliseconds (3 seconds)
+}
+
 
 function renderCarouselItems(imageUrls) {
   return imageUrls.map((imageUrl, index) => `
@@ -487,10 +505,27 @@ function renderCarouselIndicators(imageUrls, productID) {
   `).join('');
 }
 
+function addToCart(productID) {
+
+}
+
 const cart = [];
 
 function addToCart(productName, productImage, productPrice) {
-  const product = {name: productName, imageUrl: productImage, price: productPrice};
-  cart.push(product);
+  const product = { name: productName, imageUrl: productImage, price: productPrice };
+
+  // Check if the product is already in the cart
+  const existingProduct = cart.find(item => item.name === productName && item.imageUrl === productImage);
+
+  if (existingProduct) {
+    // If the product is already in the cart, increment the quantity
+    existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+  } else {
+    // If the product is not in the cart, add it with quantity 1
+    product.quantity = 1;
+    cart.push(product);
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
   console.log("Product added to cart:", product);
 }

@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/fc770c52cb.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js"></script>
+    <script src="../js/search.js" defer></script>
     <script src="../js/cart.js"></script>
   </head>
   <body id="TechNova">
@@ -61,7 +61,7 @@
                   <p class="nav-link-name">Cart</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img
+                <a class="nav-link" href="signin.html"><img
                     src="../img/navbar/user.png" />
                   <p class="nav-link-name">Sign In</p></a>
               </li>
@@ -121,7 +121,7 @@
                 Connection Type: Wireless<br>
                 Mouse Weight: 58g</p>
                 <p class="card-text"><strong>Price:</strong> €149</p>
-                <button class="btn btn-primary" onclick="addToCart('Razer - Viper V2 Pro', '../img/products/gaming-mouse-category/product-1/1.png', 149)">Add to Cart</button>
+                <button id="addToCart" class="btn btn-primary" onclick="addToCart('Razer - Viper V2 Pro', '../img/products/gaming-mouse-category/product-1/1.png', 149)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@
                 Connection Type: Wireless<br>
                 Mouse Weight: 114-130g</p>
                 <p class="card-text"><strong>Price:</strong> €119</p>
-                <button class="btn btn-primary" onclick="addToCart('Logitech - G502 LIGHTSPEED', '../img/products/gaming-mouse-category/product-2/1.png', 119)">Add to Cart</button>
+                <button id="addToCart1" class="btn btn-primary" onclick="addToCart('Logitech - G502 LIGHTSPEED', '../img/products/gaming-mouse-category/product-2/1.png', 119)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@
                 Width: 550mm<br>
                 Thickness: 4mm</p>
                 <p class="card-text"><strong>Price:</strong> €49</p>
-                <button class="btn btn-primary" onclick="addToCart('Razer - Gigantus V2', '../img/products/gaming-mouse-category/product-3/1.png', 49)">Add to Cart</button>
+                <button id="addToCart2" class="btn btn-primary" onclick="addToCart('Razer - Gigantus V2', '../img/products/gaming-mouse-category/product-3/1.png', 49)">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@
                 Width: 400mm<br>
                 Thinkness: 3mm</p>
                 <p class="card-text"><strong>Price:</strong> €19</p>
-                <button class="btn btn-primary" onclick="addToCart('Logitech - G440', '../img/products/gaming-mouse-category/product-4/1.png', 19)">Add to Cart</button>
+                <button id="addToCart3" class="btn btn-primary" onclick="addToCart('Logitech - G440', '../img/products/gaming-mouse-category/product-4/1.png', 19)">Add to Cart</button>
               </div>
             </div>
           </div>
