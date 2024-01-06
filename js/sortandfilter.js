@@ -465,7 +465,7 @@ function renderResults() {
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">${product.description}</p>
           <p class="card-text">Price: €${product.price.toFixed(2)}</p>
-          <button class="btn btn-primary" onclick="showCartAlert(), addToCart('${product.name}', '${product.imageUrls[0]}', ${product.price})">Add to Cart</button>
+          <button class="btn btn-primary" onclick="showCartAlert(), addToCart(${product.id}, '${product.name}', '${product.imageUrls[0]}', ${product.price})">Add to Cart</button>
         </div>
       </div>
     `;
@@ -505,17 +505,23 @@ function renderCarouselIndicators(imageUrls, productID) {
   `).join('');
 }
 
-function addToCart(productID) {
-
+function getCartFromLocalStorage() {
+  const storedCart = localStorage.getItem('cart');
+  if (storedCart) {
+    return JSON.parse(storedCart);
+  } else {
+    return [];
+  }
 }
 
-const cart = [];
+const cart = getCartFromLocalStorage();
 
-function addToCart(productName, productImage, productPrice) {
-  const product = { name: productName, imageUrl: productImage, price: productPrice };
+
+function addToCart(productId, productName, productImage, productPrice) {
+  const product = {id: productId, name: productName, imageUrl: productImage, price: productPrice };
 
   // Check if the product is already in the cart
-  const existingProduct = cart.find(item => item.name === productName && item.imageUrl === productImage);
+  const existingProduct = cart.find(item => item.id === productId);
 
   if (existingProduct) {
     // If the product is already in the cart, increment the quantity
