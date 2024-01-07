@@ -29,29 +29,27 @@ function addToCart(productId, productName, productImage, productPrice) {
   console.log("Product added to cart:", product);
 }
 
+let totalArray;
+
 function renderResults() {
   // Retrieve and parse cart data from localStorage
   const storedCart = getCartFromLocalStorage();
 
-  const resultsContainer = document.getElementById('results-container');
-  resultsContainer.innerHTML = '';
+  totalArray = 0;
+  let cumulativeTotal = 0;
 
-  const table = document.createElement('table');
-  table.className = 'cart-table';
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
 
-  // Create table header
-  const headerRow = table.insertRow();
-  headerRow.innerHTML = '<th>Product</th><th>Product</th><th class="tcenter">Quantity</th><th class="tcenter">Subtotal</th><th class="tcenter">Action</th>';
-  headerRow.className = 'headerRow';
   storedCart.forEach(product => {
-    const row = table.insertRow();
+    const row = tbody.insertRow();
     row.id = `cart-${product.id}`;
-    row.className = 'content';
+    row.className = 'arr-content';
 
     // Product Image
     const imgCell = row.insertCell();
-    imgCell.innerHTML = `<img src="${product.imageUrl}" alt="${product.name}" class="cart-img">`;
-    imgCell.classList = 'cartImgCont';
+    imgCell.innerHTML = `<img src="${product.imageUrl}" alt="${product.name}" class="arr-cart-img">`;
+    imgCell.classList = 'arr-cartImgCont';
 
     // Product Name
     const nameCell = row.insertCell();
@@ -60,28 +58,40 @@ function renderResults() {
     // Quantity
     const quantityCell = row.insertCell();
     quantityCell.innerHTML = `
-  <div class="quantity">
+  <div class="arr-quantity">
     <button onclick="decreaseQuantity(${product.id})"><i class="fa-solid fa-minus"></i></button>
     <span id="quantity-${product.id}">${product.quantity}</span>
     <button onclick="increaseQuantity(${product.id})"><i class="fa-solid fa-plus"></i></button>
   </div>
 `;
-    quantityCell.classList = "tcenter";
+    quantityCell.classList = "arr-tcenter";
 
 
     // Subtotal
     const subtotalCell = row.insertCell();
     const subtotal = product.price * product.quantity;
     subtotalCell.textContent = `€${subtotal.toFixed(2)}`;
-    subtotalCell.classList = "tcenter";
+    subtotalCell.classList = "arr-subTotal";
+    cumulativeTotal += subtotal;
 
     // Action (Remove button)
     const actionCell = row.insertCell();
-    actionCell.innerHTML = `<button class="removeButton" onclick="removeFromCart(${product.id})"><i class="fa-solid fa-xmark"></i></button>`;
-    actionCell.classList = 'removeCont';
+    actionCell.innerHTML = `<button class="arr-removeButton" onclick="removeFromCart(${product.id})"><i class="fa-solid fa-xmark"></i></button>`;
+    actionCell.classList = 'arr-removeCont';
   });
+  
+  totalArray += cumulativeTotal;
+  let totalArray1 = totalArray + 4;
 
-  resultsContainer.appendChild(table);
+  const totalValue = document.getElementById('totalValue');
+  const totalValue1 = document.getElementById('totalValue1');
+  const totalValue2 = document.getElementById('totalValue2');
+  const totalValue3 = document.getElementById('totalValue3');
+  totalValue.textContent = `€` + totalArray.toFixed(2);
+  totalValue1.innerHTML = `€` + totalArray.toFixed(2);
+  totalValue2.innerHTML = `€` + totalArray1.toFixed(2);
+  totalValue3.innerHTML = `€` + totalArray1.toFixed(2);
+
 }
 
 
