@@ -127,6 +127,7 @@
         color: #c4c4c4;
       }
 
+
       @media only screen and (max-width: 600px) {
         #tbody, #results-container {
           font-size: 85%;
@@ -218,12 +219,15 @@
               </tr>
             </tfoot>
           </table>
-          <div style="width: 388px; height: 644px; position: relative; background: #565ABB; border-radius: 20px; overflow: hidden;">
+          <div style="width: 388px; height: 644px; position: sticky; top: 5vw; background: #565ABB; border-radius: 20px; overflow: hidden;">
             <div style="width: 138px; left: 19px; top: 202px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Name on card</div>
             <div style="width: 94px; left: 19px; top: 84px; position: absolute; color: #FEFCFC; font-size: 16px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Card type</div>
             <div style="width: 150px; left: 19px; top: 27px; position: absolute; color: #FEFCFC; font-size: 22px; font-family: 'Lato'; font-weight: 600; word-wrap: break-word">Card Details</div>
             <div style="width: 350px; height: 40px; left: 19px; top: 228px; position: absolute; background: #6268C6; border-radius: 6px">
-              <input type="text" placeholder="Name" style="width: 350px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #C4C4C4; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">
+              <input type="text" placeholder="Name" style="width: 350px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #fff; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">
+            </div>
+            <div style="width: 350px; height: 40px; left: 19px; top: 306px; position: absolute; background: #6268C6; border-radius: 6px">
+              <input type="text" placeholder="1111 2222 3333 4444" inputmode="numeric" style="width: 350px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #fff; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">
             </div>
             <div style="width: 138px; left: 19px; top: 360px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Expiration date</div>
             <div style="width: 171px; height: 40px; left: 19px; top: 385px; position: absolute; background: #6268C6; border-radius: 6px">
@@ -231,7 +235,7 @@
             </div>
             <div style="width: 138px; left: 198px; top: 360px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">CVV</div>
             <div style="width: 171px; height: 40px; left: 198px; top: 385px; position: absolute; background: #6268C6; border-radius: 6px">
-              <input type="text" placeholder="123" style="width: 171px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #fff; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word;">
+              <input type="text" placeholder="123" inputmode="numeric" style="width: 171px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #fff; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word;">
             </div>
             <div style="width: 138px; left: 19px; top: 282px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Card Number</div>
             <div style="width: 138px; left: 19px; top: 462px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Subtotal</div>
@@ -240,9 +244,6 @@
             <div style="width: 138px; left: 231px; top: 516px; position: absolute; text-align: right; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word" id="totalValue2"></div>
             <div style="width: 138px; left: 19px; top: 489px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Shipping</div>
             <div style="width: 138px; left: 19px; top: 516px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Total (Tax incl.)</div>
-            <div style="width: 350px; height: 40px; left: 19px; top: 306px; position: absolute; background: #6268C6; border-radius: 6px">
-              <input type="text" placeholder="1111 2222 3333 4444" inputmode="numeric" style="width: 350px; height: 40px; padding-left: 18px; border: none; background: #6268C6; border-radius: 6px; color: #fff; font-size: 12px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">
-            </div>
             <div style="width: 350px; height: 60px; left: 19px; top: 563px; position: absolute; background: #4DE1C1; border-radius: 12px"></div>
             <img style="width: 75px; height: 55px; left: 19px; top: 120px; position: absolute; background: linear-gradient(0deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.20) 100%); border-radius: 5px" src="../img/cart/masterCard.png" />
             <img style="width: 75px; height: 55px; left: 111px; top: 120px; position: absolute; background: linear-gradient(0deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.20) 100%); border-radius: 5px" src="../img/cart/visa.png" />
@@ -254,38 +255,6 @@
             <div style="width: 85px; left: 239px; top: 581px; position: absolute; color: #FEFCFC; font-size: 16px; font-family: 'Lato'; font-weight: 500; word-wrap: break-word">Checkout</div>
             <img style="width: 25px; height: 25px; left: 324px; top: 580px; position: absolute" src="../img/cart/Right.png" />
           </div>
-          <div style="width: 100%; height: min-content; position: relative; background: #565ABB; border-radius: 15px; overflow: hidden">
-            <div style="width: 138px; left: 19px; top: 202px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Name on card</div>
-            <div style="width: 94px; left: 19px; top: 84px; position: absolute; color: #FEFCFC; font-size: 16px; font-family: Nunito; font-weight: 500; word-wrap: break-word">Card type</div>
-            <div style="width: 150px; left: 19px; top: 27px; position: absolute; color: #FEFCFC; font-size: 22px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Card Details</div>
-            <div style="width: 350px; height: 40px; left: 19px; top: 228px; position: absolute; background: #6268C6; border-radius: 6px"></div>
-            <div style="width: 51px; left: 37px; top: 241px; position: absolute; color: #C4C4C4; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Name</div>
-            <div style="width: 138px; left: 19px; top: 360px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Expiration date</div>
-            <div style="width: 171px; height: 40px; left: 19px; top: 385px; position: absolute; background: #6268C6; border-radius: 6px"></div>
-            <div style="width: 69px; left: 37px; top: 396px; position: absolute; color: #C4C4C4; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">mm/yy</div>
-            <div style="width: 138px; left: 198px; top: 360px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">CVV</div>
-            <div style="width: 171px; height: 40px; left: 198px; top: 385px; position: absolute; background: #6268C6; border-radius: 6px"></div>
-            <div style="width: 69px; left: 216px; top: 396px; position: absolute; color: #C4C4C4; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">123</div>
-            <div style="width: 138px; left: 19px; top: 282px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Card Number</div>
-            <div style="width: 138px; left: 19px; top: 462px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Subtotal</div>
-            <div style="width: 138px; left: 231px; top: 462px; position: absolute; text-align: right; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">$1,668</div>
-            <div style="width: 138px; left: 231px; top: 489px; position: absolute; text-align: right; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">$4</div>
-            <div style="width: 138px; left: 231px; top: 516px; position: absolute; text-align: right; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">$1,672</div>
-            <div style="width: 138px; left: 19px; top: 489px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Shipping</div>
-            <div style="width: 138px; left: 19px; top: 516px; position: absolute; color: #FEFCFC; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Total (Tax incl.)</div>
-            <div style="width: 350px; height: 40px; left: 19px; top: 306px; position: absolute; background: #6268C6; border-radius: 6px"></div>
-            <div style="width: 172px; left: 37px; top: 317px; position: absolute; color: #C4C4C4; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">1111 2222 3333 4444</div>
-            <img style="width: 75px; height: 55px; left: 19px; top: 120px; position: absolute; background: linear-gradient(0deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.20) 100%); border-radius: 5px" src="https://via.placeholder.com/75x55" />
-            <div style="width: 350px; height: 60px; left: 19px; top: 563px; position: absolute; background: #4DE1C1; border-radius: 12px"></div>
-            <img style="width: 75px; height: 55px; left: 111px; top: 120px; position: absolute; background: linear-gradient(0deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.20) 100%); border-radius: 5px" src="https://via.placeholder.com/75x55" />
-            <img style="width: 75px; height: 55px; left: 202px; top: 120px; position: absolute; background: linear-gradient(0deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.20) 100%); border-radius: 5px" src="https://via.placeholder.com/75x55" />
-            <div style="width: 75px; height: 55px; left: 294px; top: 120px; position: absolute; background: rgba(217, 217, 217, 0.20); border-radius: 5px"></div>
-            <div style="width: 56px; left: 304px; top: 137px; position: absolute; text-align: center; color: #FEFCFC; font-size: 14px; font-family: Open Sans; font-weight: 700; word-wrap: break-word">See all</div>
-            <div style="width: 350px; height: 0px; left: 19px; top: 447.46px; position: absolute; border: 1px #5F65C3 solid"></div>
-            <div style="width: 138px; left: 43px; top: 581px; position: absolute; color: #FEFCFC; font-size: 16px; font-family: Poppins; font-weight: 500; word-wrap: break-word">$1,672</div>
-            <div style="width: 85px; left: 239px; top: 581px; position: absolute; color: #FEFCFC; font-size: 16px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Checkout</div>
-            <img style="width: 25px; height: 25px; left: 324px; top: 580px; position: absolute" src="https://via.placeholder.com/25x25" />
-        </div>
         </div>
         
       </main>
